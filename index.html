@@ -76,6 +76,45 @@ h3{font-size:27px;line-height:1.2;letter-spacing:-.035em;margin:12px 0}
 .social-links a:hover{background:#265239}
 .contact-right{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
 @media(max-width:540px){.social-links{gap:8px}.social-links a{padding:9px 11px}}
+
+/* Career narrative, verified Therapia numbers and qualitative product impact */
+.about-overview{display:grid;grid-template-columns:1.15fr .85fr;gap:68px;align-items:start}
+.about-overview p{color:var(--muted);max-width:610px}
+.about-aside{padding:27px 28px;border:1px solid #d4e0d1;background:#fffefa;border-radius:17px}
+.about-aside h3{font-size:20px;margin-top:7px}
+.about-aside p{font-size:14px;margin-bottom:12px}
+.availability-list{list-style:none;margin:13px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.availability-list li{border:1px solid #d6dfd2;background:#eff5e9;border-radius:30px;padding:7px 11px;font-size:11px;font-weight:750;color:#325843}
+.cv-buttons{display:flex;gap:11px;flex-wrap:wrap;margin-top:20px}
+.cv-buttons a{min-width:165px;text-align:center;justify-content:center;font-size:13px}
+.impact-intro{margin:70px 0 22px;display:flex;align-items:end;gap:25px;justify-content:space-between}
+.impact-intro h2{max-width:740px;margin-bottom:9px}
+.impact-intro p{max-width:440px;color:var(--muted);font-size:14px;margin:0}
+.impact-workflow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:23px}
+.impact-workflow b{color:#406850;font-size:11px;padding:7px 11px;border:1px solid #c8dac9;border-radius:40px;background:#f8faf3}
+.impact-workflow i{font-style:normal;color:#71967e;font-weight:800;font-size:15px}
+.impact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;align-items:stretch}
+.impact-card{display:flex;flex-direction:column;border-radius:18px;border:1px solid #d6e2d4;padding:27px 26px 25px;min-width:0;background:#fffefa}
+.impact-card .impact-kicker{font-size:10px;font-weight:850;letter-spacing:.14em;color:#628b6f}
+.impact-card h3{font-size:clamp(20px,2.1vw,27px);line-height:1.2;margin:17px 0 12px}
+.impact-card p{font-size:13px;line-height:1.7;color:#5c7467;margin:0 0 17px}
+.impact-card .impact-bullet{font-size:12px;line-height:1.55;color:#365a45;display:flex;align-items:start;gap:9px;margin:0 0 12px}
+.impact-card .impact-bullet:before{content:"✓";display:block;color:#23805a;font-weight:900;flex-shrink:0}
+.impact-card a{display:inline-flex;align-items:center;align-self:flex-start;gap:5px;margin-top:auto;padding-top:19px;color:#1c704b;font-size:12px;font-weight:850;text-decoration:underline;text-underline-offset:4px}
+.impact-card.therapia{background:#173427;color:#f0f6e9;border-color:#173427}
+.impact-card.therapia .impact-kicker{color:#c4d9aa}
+.impact-card.therapia h3{color:#f6fff0}
+.impact-card.therapia p{color:#c9d8c8}
+.impact-card.therapia .impact-numbers{display:flex;flex-wrap:wrap;gap:27px;margin:11px 0 20px}
+.impact-card.therapia .impact-numbers strong{display:block;font-size:clamp(31px,3vw,42px);line-height:1.12;letter-spacing:-.04em;color:#dffc9d}
+.impact-card.therapia .impact-numbers span{display:block;color:#bbd6bf;font-size:10px;font-weight:750;letter-spacing:.06em;margin-top:6px}
+.impact-card.therapia .impact-footnote{font-size:11px;color:#bed0bf;margin-top:auto;border-top:1px solid #ffffff23;padding-top:16px}
+.impact-card.profit{background:#f9faf6}
+.impact-card.automation{background:#f4f8eb}
+@media(max-width:930px){.about-overview{gap:24px}.impact-grid{grid-template-columns:1fr 1fr}.impact-card.automation{grid-column:1/-1}}
+@media(max-width:680px){.about-overview{grid-template-columns:1fr}.impact-intro{display:block;margin-top:47px}.impact-intro p{margin-top:13px}.impact-grid{grid-template-columns:1fr}.impact-card.automation{grid-column:auto}.impact-card{padding:25px 22px}.about-aside{padding:22px}.cv-buttons a{flex:1;min-width:130px}.impact-workflow{gap:6px}.impact-workflow b{font-size:10px;padding:6px 9px}}
+@media(max-width:370px){.cv-buttons{flex-direction:column}.cv-buttons a{width:100%}}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Omar Bettaieb","url":"https://omarbettaieb.github.io/","jobTitle":"Full-Stack & Shopify Engineer","sameAs":["https://github.com/omarbettaieb","https://www.linkedin.com/in/omar-bettaieb-b8b153255"],"knowsAbout":["Shopify","TypeScript","Node.js","React","Marketing Analytics","WhatsApp Commerce Automation"]}</script>
 </head>
@@ -137,7 +176,56 @@ h3{font-size:27px;line-height:1.2;letter-spacing:-.035em;margin:12px 0}
 <div class="skill"><div style="font-size:30px">◇</div><h3 data-en="Shopify & growth" data-fr="Shopify & croissance">Shopify & growth</h3><p data-en="Storefronts from scratch, Liquid customization, conversion improvements and performance analytics." data-fr="Boutiques créées de zéro, Liquid, optimisation des conversions et analyse de performance.">Storefronts from scratch, Liquid customization, conversion improvements and performance analytics.</p><footer>Liquid · Shopify GraphQL · CRO · GA4</footer></div>
 <div class="skill"><div style="font-size:30px">✳</div><h3 data-en="AI & automation" data-fr="IA & automatisation">AI & automation</h3><p data-en="LLM-powered reporting, AI-assisted product discovery, WhatsApp workflows and business automation." data-fr="Reporting avec LLM, découverte de produits assistée par IA, workflows WhatsApp et automatisation métier.">LLM-powered reporting, AI-assisted product discovery, WhatsApp workflows and business automation.</p><footer>OpenAI · Claude · Gemini · WhatsApp API</footer></div>
 </div></div></section>
-<section id="about" class="section alt"><div class="container about"><div><div class="kicker">03 / <span data-en="ABOUT ME" data-fr="À PROPOS">ABOUT ME</span></div><h2 data-en="A developer who understands the business side." data-fr="Un développeur qui comprend les enjeux métier.">A developer who understands the business side.</h2><p data-en="I'm a Tunisia-based engineer in computer science. I build products end-to-end and connect technical delivery to marketing measurement, conversion and operational improvements." data-fr="Je suis ingénieur en informatique basé en Tunisie. Je développe des produits de bout en bout en reliant technique, performance marketing, conversion et efficacité opérationnelle.">I'm a Tunisia-based engineer in computer science. I build products end-to-end and connect technical delivery to marketing measurement, conversion and operational improvements.</p><p data-en="I'm open to full-time and contract roles in Tunisia and to genuinely remote international collaboration." data-fr="Je suis ouvert aux postes salariés et aux missions en Tunisie comme aux collaborations internationales réellement à distance.">I'm open to full-time and contract roles in Tunisia and to genuinely remote international collaboration.</p><a href="/assets/Omar_Bettaieb_CV_EN.pdf" download="Omar_Bettaieb_CV_EN.pdf" class="btn outline" type="application/pdf" data-en="Download CV · EN ↓" data-fr="Télécharger CV · EN ↓">Download CV · EN ↓</a><a href="/assets/Omar_Bettaieb_CV_FR.pdf" download="Omar_Bettaieb_CV_FR.pdf" class="btn outline" type="application/pdf" data-en="Download CV · FR ↓" data-fr="Télécharger CV · FR ↓">Download CV · FR ↓</a></div><div class="stats"><div class="kicker" style="color:#d1e9bb">THERAPIA / GROWTH</div><blockquote data-en="“I care about what happens after the code ships.”" data-fr="« Je m'intéresse à ce qui se passe après la mise en production. »">“I care about what happens after the code ships.”</blockquote><div class="numbers"><div><strong>+25%</strong><span data-en="WEB TRAFFIC" data-fr="TRAFIC WEB">WEB TRAFFIC</span></div><div><strong>+15%</strong><span data-en="ONLINE SALES" data-fr="VENTES EN LIGNE">ONLINE SALES</span></div></div><p style="color:#b8cdb5;font-size:12px" data-en="Results from my growth and technical role at Therapia." data-fr="Résultats de mon rôle Growth et Technique chez Therapia.">Results from my growth and technical role at Therapia.</p></div></div></section>
+<section id="about" class="section alt"><div class="container">
+<div class="about-overview">
+<div><div class="kicker">03 / <span data-en="ABOUT ME" data-fr="À PROPOS">ABOUT ME</span></div>
+<h2 data-en="I build products that make the work easier." data-fr="Je développe des solutions qui simplifient le travail.">I build products that make the work easier.</h2>
+<p data-en="I'm a Tunisia-based computer science engineer working across full-stack development, Shopify, analytics and commerce automation. I focus on what teams can do better after a product launches — less repetitive work, clearer information and better customer experiences." data-fr="Je suis ingénieur en informatique basé en Tunisie, spécialisé en développement full-stack, Shopify, analytics et automatisation e-commerce. Je m'intéresse aux améliorations concrètes après la mise en production : moins de tâches répétitives, des informations plus claires et une meilleure expérience client.">I'm a Tunisia-based computer science engineer working across full-stack development, Shopify, analytics and commerce automation. I focus on what teams can do better after a product launches — less repetitive work, clearer information and better customer experiences.</p>
+</div>
+<aside class="about-aside">
+<div class="kicker" data-en="LET'S WORK TOGETHER" data-fr="COLLABORONS">LET'S WORK TOGETHER</div>
+<h3 data-en="Available for new opportunities" data-fr="Disponible pour de nouvelles opportunités">Available for new opportunities</h3>
+<p data-en="Full-time or contract roles, based in Tunisia or internationally remote." data-fr="Postes salariés ou missions en Tunisie et collaborations internationales en télétravail.">Full-time or contract roles, based in Tunisia or internationally remote.</p>
+<ul class="availability-list"><li data-en="Tunisia" data-fr="Tunisie">Tunisia</li><li data-en="Worldwide remote" data-fr="Remote international">Worldwide remote</li><li>Full-time / Contract</li></ul>
+<div class="cv-buttons">
+<a href="/assets/Omar_Bettaieb_CV_EN.pdf" download="Omar_Bettaieb_CV_EN.pdf" class="btn outline" type="application/pdf" data-en="Download CV · EN ↓" data-fr="Télécharger CV · EN ↓">Download CV · EN ↓</a>
+<a href="/assets/Omar_Bettaieb_CV_FR.pdf" download="Omar_Bettaieb_CV_FR.pdf" class="btn outline" type="application/pdf" data-en="Download CV · FR ↓" data-fr="Télécharger CV · FR ↓">Download CV · FR ↓</a>
+</div>
+</aside>
+</div>
+<div class="impact-intro"><div>
+<div class="kicker">04 / <span data-en="BUSINESS IMPACT" data-fr="IMPACT BUSINESS">BUSINESS IMPACT</span></div>
+<h2 data-en="The value behind the code." data-fr="La valeur derrière le code.">The value behind the code.</h2>
+<p data-en="From measurable growth to simpler operations — this is what my work changes for a business." data-fr="De la croissance mesurable à des opérations plus simples : l'impact concret de mes réalisations sur l'activité.">From measurable growth to simpler operations — this is what my work changes for a business.</p>
+</div></div>
+<div class="impact-workflow" aria-label="Working approach">
+<b data-en="Build" data-fr="Développer">Build</b><i aria-hidden="true">→</i><b data-en="Integrate" data-fr="Intégrer">Integrate</b><i aria-hidden="true">→</i><b data-en="Measure" data-fr="Mesurer">Measure</b><i aria-hidden="true">→</i><b data-en="Optimize" data-fr="Optimiser">Optimize</b>
+</div>
+<div class="impact-grid">
+<article class="impact-card therapia">
+<div class="impact-kicker">01 / THERAPIA — <span data-en="MEASURED GROWTH" data-fr="CROISSANCE MESURÉE">MEASURED GROWTH</span></div>
+<h3 data-en="Growth backed by results." data-fr="Une croissance mesurable.">Growth backed by results.</h3>
+<div class="impact-numbers"><div><strong>+25%</strong><span data-en="WEB TRAFFIC" data-fr="TRAFIC WEB">WEB TRAFFIC</span></div><div><strong>+15%</strong><span data-en="ONLINE SALES" data-fr="VENTES EN LIGNE">ONLINE SALES</span></div></div>
+<p data-en="Combined technical execution, e-commerce and performance marketing to drive measurable growth." data-fr="Un travail alliant exécution technique, e-commerce et marketing de performance pour générer une croissance mesurable.">Combined technical execution, e-commerce and performance marketing to drive measurable growth.</p>
+<div class="impact-footnote" data-en="Reported outcomes from my role at Therapia — not attributed to VegaProfit or WhatsApp automation." data-fr="Résultats de mon rôle chez Therapia — non attribués à VegaProfit ni aux automatisations WhatsApp.">Reported outcomes from my role at Therapia — not attributed to VegaProfit or WhatsApp automation.</div>
+</article>
+<article class="impact-card profit">
+<div class="impact-kicker">02 / VEGAPROFIT — <span data-en="OPERATIONAL CLARITY" data-fr="VISIBILITÉ OPÉRATIONNELLE">OPERATIONAL CLARITY</span></div>
+<h3 data-en="Clearer reporting. Easier decisions." data-fr="Un reporting clair. Des décisions facilitées.">Clearer reporting. Easier decisions.</h3>
+<p data-en="I developed a Shopify and Meta Ads analytics app that brings sales, spend and real profitability into one place instead of scattered checks." data-fr="J'ai développé une application réunissant les ventes Shopify, les dépenses Meta Ads et la rentabilité réelle dans une vue commune, plutôt que de multiplier les vérifications.">I developed a Shopify and Meta Ads analytics app that brings sales, spend and real profitability into one place instead of scattered checks.</p>
+<div class="impact-bullet" data-en="Easier daily reporting and visibility into costs and profit" data-fr="Reporting quotidien simplifié et meilleure visibilité sur les coûts et bénéfices">Easier daily reporting and visibility into costs and profit</div>
+<div class="impact-bullet" data-en="More transparent campaign decisions with explainable recommendations" data-fr="Décisions publicitaires plus claires grâce à des recommandations expliquées">More transparent campaign decisions with explainable recommendations</div>
+<a href="/vegaprofit.html" data-en="Explore VegaProfit case study ↗" data-fr="Découvrir le projet VegaProfit ↗">Explore VegaProfit case study ↗</a>
+</article>
+<article class="impact-card automation">
+<div class="impact-kicker">03 / WHATSAPP & AI — <span data-en="CUSTOMER OPERATIONS" data-fr="RELATION CLIENT">CUSTOMER OPERATIONS</span></div>
+<h3 data-en="Less manual work. Stronger customer relationships." data-fr="Moins de travail manuel. Une meilleure relation client.">Less manual work. Stronger customer relationships.</h3>
+<p data-en="My WhatsApp automations reduced repetitive COD order follow-up and helped keep customer conversations active, with order choices reflected in Shopify tags." data-fr="Mes automatisations WhatsApp ont réduit les suivis manuels répétitifs des commandes à la livraison et facilité les échanges clients, avec des réponses visibles via les tags Shopify.">My WhatsApp automations reduced repetitive COD order follow-up and helped keep customer conversations active, with order choices reflected in Shopify tags.</p>
+<div class="impact-bullet" data-en="Abandoned checkout reminders and welcome offers create opportunities to recover sales" data-fr="Relances de paniers abandonnés et offres de bienvenue pour récupérer des ventes">Abandoned checkout reminders and welcome offers create opportunities to recover sales</div>
+<div class="impact-bullet" data-en="Product Q&A helps nurture engagement, retention and customer trust" data-fr="Conseils produit pour entretenir l'engagement, la fidélisation et la confiance client">Product Q&A helps nurture engagement, retention and customer trust</div>
+<a href="/whatsapp-ai-automation.html" data-en="Explore automation case study ↗" data-fr="Découvrir le projet d'automatisation ↗">Explore automation case study ↗</a>
+</article>
+</div></div></section>
 <section class="contact" id="contact"><div class="container contact-flex"><div><div class="kicker" style="color:#bfd6b0">04 / <span data-en="GET IN TOUCH" data-fr="CONTACT">GET IN TOUCH</span></div><h2 data-en="Let's build what's next." data-fr="Construisons la suite.">Let's build what's next.</h2><p data-en="Open to relevant product, e-commerce and automation opportunities." data-fr="Ouvert aux opportunités en produits numériques, e-commerce et automatisation.">Open to relevant product, e-commerce and automation opportunities.</p></div><div class="contact-right"><a class="email" href="mailto:omarbettaieb3@gmail.com">omarbettaieb3@gmail.com ↗</a>
 <div class="social-links" aria-label="Professional profiles">
 <a href="https://www.linkedin.com/in/omar-bettaieb-b8b153255" target="_blank" rel="noopener noreferrer" aria-label="Omar Bettaieb on LinkedIn">LinkedIn ↗</a>
