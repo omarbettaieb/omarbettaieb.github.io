@@ -127,4 +127,5 @@ footer{background:var(--deep);color:white;padding:57px 0}.footerin{display:flex;
 const languages=[...document.querySelectorAll('[data-lang]')],targets=[...document.querySelectorAll('[data-en]')];
 function setLanguage(lang){document.documentElement.lang=lang;targets.forEach(el=>el.innerHTML=el.getAttribute('data-'+lang));languages.forEach(b=>{let ok=b.dataset.lang===lang;b.classList.toggle('active',ok);b.setAttribute('aria-pressed',String(ok))});try{localStorage.setItem('ob-site-language',lang)}catch(e){}}
 languages.forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));let initial='en';try{initial=localStorage.getItem('ob-site-language')||'en'}catch(e){}setLanguage(initial==='fr'?'fr':'en');
-</script></body></html>
+</script><script defer src="/assets/portfolio-analytics.js"></script>
+</body></html>

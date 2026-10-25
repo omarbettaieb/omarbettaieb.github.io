@@ -80,4 +80,5 @@ footer{display:flex;justify-content:space-between;gap:25px;color:#827b70;padding
 const buttons=[...document.querySelectorAll('[data-lang]')];const translatable=[...document.querySelectorAll('[data-en]')];
 function setLang(lang){document.documentElement.lang=lang;translatable.forEach(el=>el.textContent=el.getAttribute('data-'+lang));buttons.forEach(b=>{let a=b.dataset.lang===lang;b.classList.toggle('active',a);b.setAttribute('aria-pressed',String(a))});try{localStorage.setItem('ob-site-language',lang)}catch(e){}}
 buttons.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));let initial='en';try{initial=localStorage.getItem('ob-site-language')||'en'}catch(e){}setLang(initial==='fr'?'fr':'en');
-</script></body></html>
+</script><script defer src="/assets/portfolio-analytics.js"></script>
+</body></html>
