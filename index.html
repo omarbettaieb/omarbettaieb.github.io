@@ -162,6 +162,10 @@ section[id]{scroll-margin-top:96px}
 .mobile-panel{display:none}
 @media(max-width:1000px){.hero{gap:24px}.proof{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.featured-content{padding:30px}.dashboard{padding:26px}}
 @media(max-width:820px){
+/* Override the Phase 1 desktop grid defined above: phones/tablets must stack the hero. */
+.hero{grid-template-columns:minmax(0,1fr);gap:28px;align-items:stretch}
+.hero>div{min-width:0}
+.hero-art{width:100%;min-height:300px}
 .menu-toggle{display:inline-flex}
 .mobile-panel:not([hidden]){display:block;position:absolute;top:100%;left:0;right:0;background:#f8f8f1;box-shadow:0 20px 35px #173c2920;border-bottom:1px solid #d9e3d7}
 .mobile-nav{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;padding-top:12px;padding-bottom:18px;min-height:0}
@@ -169,7 +173,13 @@ section[id]{scroll-margin-top:96px}
 .mobile-nav a:hover,.mobile-nav a:focus-visible{background:#e6efde;color:#20513a;border-radius:7px}
 }
 @media(max-width:540px){
+.hero{grid-template-columns:minmax(0,1fr);gap:26px}
 .hero h1{font-size:clamp(38px,9.1vw,51px);letter-spacing:-.065em}
+.hero-art{min-height:280px;padding:22px}
+.hero-art .art-card{margin-top:17px;padding:19px}
+.hero-art .art-title{font-size:30px;margin:10px 0 17px}
+.hero-art .art-bottom{margin-top:18px}
+.hero-art .art-rows>div{font-size:10px;padding-top:8px}
 .hero-cta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 .hero-cta .btn{padding:11px 10px;font-size:12px;text-align:center}
 .nav-contact{display:none}
