@@ -1,9 +1,9 @@
-/* Portfolio analytics — disabled until a real Google Analytics 4 Measurement ID is supplied.
-   Enter the public G-... Measurement ID below. Never use an invented ID.
-   Basic consent mode: no Google script or analytics request is loaded before opt-in. */
+/* Portfolio analytics — GA4 measurement is enabled only after visitor consent.
+   Basic consent mode: no Google script or analytics request is loaded before opt-in.
+   Ads personalization and ads storage remain disabled. */
 (() => {
   'use strict';
-  const GA4_MEASUREMENT_ID = '';
+  const GA4_MEASUREMENT_ID = 'G-GFR5C7VZW3';
   const STORAGE_KEY = 'ob_portfolio_analytics_consent_v1';
   if (!/^G-[A-Z0-9]{6,}$/i.test(GA4_MEASUREMENT_ID)) return;
 
