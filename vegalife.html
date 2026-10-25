@@ -42,4 +42,5 @@ section.block{padding:75px 0}h2{font-size:clamp(29px,4vw,48px);line-height:1.16;
 const buttons=[...document.querySelectorAll('[data-lang]')];const translatable=[...document.querySelectorAll('[data-en]')];
 function setLang(lang){document.documentElement.lang=lang;translatable.forEach(el=>{el.innerHTML=el.getAttribute('data-'+lang)});buttons.forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));try{localStorage.setItem('ob-site-language',lang)}catch(e){}}
 buttons.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));let current='en';try{current=localStorage.getItem('ob-site-language')||'en'}catch(e){}setLang(current==='fr'?'fr':'en');
-</script></body></html>
+</script><script defer src="/assets/portfolio-analytics.js"></script>
+</body></html>
