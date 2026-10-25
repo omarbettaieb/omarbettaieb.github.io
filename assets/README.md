@@ -15,3 +15,10 @@ The portfolio case-study pages use real, cropped screenshots. Keep the names and
 Once the image files are uploaded here, the pages `/vegalife.html` and `/bioherbs.html` load them automatically.
 
 Only use actual screenshots from the live stores. Do not invent products, numbers, or measured results.
+
+## Perfume Dubai
+
+- `perfume_dubai_case_study_01.jpg`
+- `perfume_dubai_case_study_02.jpg`
+
+Upload these original-screenshot-derived JPEGs to this folder to activate the imagery on `/perfume-dubai.html`.
