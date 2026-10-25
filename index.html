@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#142920">
+<meta name="description" content="Omar Bettaieb — Full-stack engineer, Shopify developer and AI automation specialist. Three e-commerce storefronts built from scratch and a custom production analytics app.">
+<title>Omar Bettaieb — Full-Stack · Shopify · AI</title>
+<style>
+:root{--bg:#f8f8f1;--ink:#173025;--muted:#62756a;--accent:#dffc9d;--line:#dfe7dc;--white:#fffefa}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}body{margin:0;background:var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.55}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}a:focus-visible,button:focus-visible{outline:3px solid #5f956e;outline-offset:4px}
+.container{max-width:1160px;margin:auto;padding:0 30px}
+nav{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:82px}
+header{position:sticky;top:0;z-index:10;background:rgba(248,248,241,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.logo{font-size:32px;font-weight:850;letter-spacing:-.12em}.logo span{color:#9bb858}
+.links{display:flex;gap:27px;align-items:center}.links a{font-size:13px;font-weight:700}
+.actions{display:flex;gap:14px;align-items:center}.lang{border:0;background:none;font-size:13px;color:var(--muted);font-weight:700;padding:8px}
+.lang.active{color:var(--ink);text-decoration:underline;text-underline-offset:5px}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--ink);color:white;border-radius:9px;font-weight:750;font-size:14px;padding:12px 19px;border:1px solid var(--ink)}
+.btn.light{background:var(--accent);border-color:var(--accent);color:var(--ink)}.btn.outline{background:transparent;color:var(--ink);border-color:#91a198}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:46px;align-items:center;padding-top:78px;padding-bottom:90px;min-height:610px}
+.eyebrow,.kicker{font-size:11px;letter-spacing:.16em;font-weight:800;color:#5a7862;text-transform:uppercase}
+.dot{display:inline-block;width:8px;height:8px;background:#90c361;border-radius:50%;margin-right:8px}
+h1{font-size:clamp(46px,5.5vw,83px);line-height:1.055;letter-spacing:-.063em;margin:25px 0}
+h1 em{font-style:normal;color:#829e58}h2{font-size:clamp(32px,4vw,55px);line-height:1.13;letter-spacing:-.047em;margin:14px 0 22px}
+h3{font-size:27px;line-height:1.2;letter-spacing:-.035em;margin:12px 0}
+.lead{font-size:18px;max-width:580px;color:#617468}
+.hero-cta{display:flex;gap:11px;flex-wrap:wrap;margin-top:30px}
+.proof{display:flex;gap:22px;margin-top:47px;flex-wrap:wrap}.proof>div{border-left:1px solid #d1dcd1;padding-left:15px}
+.proof strong{display:block;font-size:28px;line-height:1.2}.proof span{font-size:11px;color:var(--muted);font-weight:700}
+.hero-art{background:#163426;color:#fff;border-radius:23px;min-height:430px;padding:28px;position:relative;overflow:hidden;box-shadow:0 22px 44px #173c291f}
+.hero-art:after{content:"";position:absolute;width:340px;height:340px;border:1px solid #80a67455;border-radius:50%;right:-110px;bottom:-110px;box-shadow:0 0 0 55px #accb9b12,0 0 0 110px #accb9b07}
+.art-header{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.12em;color:#c9ddb9}.art-card{background:#254636;border:1px solid #53725c66;border-radius:16px;padding:23px;margin-top:48px;position:relative;z-index:1}
+.art-kicker{font-size:10px;color:#aecb9f;letter-spacing:.17em}
+.art-title{font-size:37px;line-height:1.18;font-weight:760;letter-spacing:-.045em;margin:18px 0 24px}.art-title em{font-style:normal;color:var(--accent)}
+.art-rows{display:grid;gap:9px}.art-rows>div{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #73907644;padding-top:11px;font-size:11px;letter-spacing:.07em}
+.art-rows b{display:inline-block;width:35%;height:7px;border-radius:20px;background:#a3db89}
+.art-bottom{font-size:10px;margin-top:37px;color:#a5c4ae;letter-spacing:.09em}
+.section{padding:80px 0}.section.alt{background:#f0f3e9}.section-top{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:30px}
+.section-top p{max-width:365px;color:var(--muted);font-size:15px}
+.featured{display:grid;grid-template-columns:1fr 1fr;background:var(--ink);border-radius:22px;color:white;overflow:hidden}
+.featured-content{padding:42px}.featured-content p{color:#c4d8c8}.tag{display:inline-block;border:1px solid #aac69c55;border-radius:30px;font-size:11px;padding:6px 10px;margin:4px 4px 0 0;color:#d1e9c5}
+.note{font-size:12px!important;color:#bfd1bd!important}
+.dashboard{background:#244634;padding:37px;display:flex;flex-direction:column;justify-content:center}
+.panel{border:1px solid #64866888;background:#173d29;border-radius:13px;padding:20px}
+.panelhead{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.09em;color:#b8d2ad}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}.metric{padding:14px 12px;background:#31513e;border-radius:9px}.metric span{font-size:11px;color:#bbd7bc}.metric i{display:block;margin-top:13px;width:75%;height:9px;background:#b7e694;border-radius:8px}
+.bars{height:100px;display:flex;align-items:end;gap:11px;border-bottom:1px solid #a2c3a555}.bars span{background:#abd688;flex:1;border-radius:3px 3px 0 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--white);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.card-art{height:185px;padding:20px;display:flex;align-items:center;justify-content:center;font-weight:850;letter-spacing:-.04em;font-size:37px;position:relative}
+.card-art small{position:absolute;top:15px;left:20px;font-weight:700;font-size:10px;letter-spacing:.1em}
+.vega{background:#e4e7ca;color:#45623e}.bio{background:#e2ecdf;color:#497e55}.perfume{background:#202724;color:#e6d8ac}
+.card-body{padding:23px}.card-body p{color:var(--muted);font-size:14px;min-height:67px}.card-body a{font-size:13px;font-weight:750;border-bottom:1px solid var(--ink)}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.skill{background:#fffefa;border:1px solid var(--line);border-radius:14px;padding:30px}
+.skill h3{font-size:22px}.skill p{color:var(--muted);font-size:14px}.skill footer{font-size:12px;font-weight:750}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.about p{color:var(--muted)}
+.stats{background:#173427;color:#f0f6e9;border-radius:18px;padding:35px}.stats blockquote{font-size:27px;line-height:1.3;margin:20px 0 30px}.numbers{display:flex;gap:50px}
+.numbers strong{display:block;font-size:39px;color:var(--accent)}.numbers span{font-size:11px;color:#b8cdb5}
+.contact{background:#142e22;color:white;padding:75px 0}.contact-flex{display:flex;align-items:center;justify-content:space-between;gap:28px}.contact h2{max-width:600px}.contact p{color:#c4d7c4}
+.email{font-size:clamp(14px,2vw,21px);color:var(--accent);font-weight:750;overflow-wrap:anywhere}
+.foot{display:flex;justify-content:space-between;gap:20px;padding:24px 0;font-size:12px;color:var(--muted)}
+@media(max-width:820px){.hero,.featured,.about{grid-template-columns:1fr}.hero{padding-top:46px;padding-bottom:55px;gap:25px;min-height:auto}.hero-art{min-height:350px}.grid,.skills{grid-template-columns:repeat(2,1fr)}.section-top{display:block}.links{display:none}}
+@media(max-width:540px){.container{padding:0 19px}nav{min-height:72px}.logo{font-size:28px}.actions{gap:3px}.btn{padding:10px 13px;font-size:12px}.hero{padding-top:39px}.lead{font-size:16px}h1{font-size:52px}.proof{gap:14px}.proof strong{font-size:23px}.hero-art{min-height:333px}.art-title{font-size:30px}.section{padding:55px 0}.featured-content,.dashboard{padding:24px}.grid,.skills{grid-template-columns:1fr}.contact-flex,.foot{display:block}.foot span{display:block;margin-bottom:7px}.card-body p{min-height:0}.numbers{gap:25px}}
+</style>
+</head>
+<body>
+<header><nav class="container" aria-label="Main navigation">
+<a class="logo" href="#top" aria-label="Omar Bettaieb">ob<span>.</span></a>
+<div class="links"><a href="#work" data-en="Work" data-fr="Projets">Work</a><a href="#skills" data-en="Expertise" data-fr="Expertises">Expertise</a><a href="#about" data-en="About" data-fr="À propos">About</a></div>
+<div class="actions"><button class="lang active" data-lang="en" aria-pressed="true">EN</button><span>/</span><button class="lang" data-lang="fr" aria-pressed="false">FR</button><a class="btn" href="mailto:omarbettaieb3@gmail.com" data-en="Contact ↗" data-fr="Contact ↗">Contact ↗</a></div>
+</nav></header>
+<main>
+<section class="container hero" id="top">
+<div><div class="eyebrow"><span class="dot"></span><span data-en="TUNISIA · OPEN TO INTERNATIONAL REMOTE" data-fr="TUNISIE · OUVERT AU REMOTE INTERNATIONAL">TUNISIA · OPEN TO INTERNATIONAL REMOTE</span></div>
+<h1><span data-en="I build digital" data-fr="Je crée des">I build digital</span><br><span data-en="products that" data-fr="produits digitaux">products that</span><br><em data-en="drive growth." data-fr="qui font grandir.">drive growth.</em></h1>
+<p class="lead" data-en="I connect engineering and business: Shopify stores built from scratch, production-ready full-stack applications, and practical AI automations." data-fr="Je relie technologie et business : boutiques Shopify créées de zéro, applications full-stack en production et automatisations IA concrètes.">I connect engineering and business: Shopify stores built from scratch, production-ready full-stack applications, and practical AI automations.</p>
+<div class="hero-cta"><a href="#work" class="btn light" data-en="Explore my work ↗" data-fr="Voir mes projets ↗">Explore my work ↗</a><a href="mailto:omarbettaieb3@gmail.com?subject=Resume%20request" class="btn outline" data-en="Request my CV ↓" data-fr="Demander mon CV ↓">Request my CV ↓</a></div>
+<div class="proof"><div><strong>03</strong><span data-en="Shopify stores built<br>from scratch" data-fr="boutiques Shopify<br>créées de zéro">Shopify stores built<br>from scratch</span></div><div><strong>01</strong><span data-en="Custom analytics app<br>in production" data-fr="application analytics<br>en production">Custom analytics app<br>in production</span></div><div><strong>∞</strong><span data-en="Code × Growth<br>× Automation" data-fr="Code × Growth<br>× Automatisation">Code × Growth<br>× Automation</span></div></div>
+</div>
+<div class="hero-art" role="img" aria-label="Concept illustration of connected Shopify, data and AI systems"><div class="art-header"><span>BUILD / MEASURE / IMPROVE</span><span>✳</span></div><div class="art-card"><div class="art-kicker">CONNECTED COMMERCE</div><div class="art-title"><span data-en="One builder." data-fr="Un développeur.">One builder.</span><br><em data-en="Multiple systems." data-fr="Plusieurs systèmes.">Multiple systems.</em></div><div class="art-rows"><div>SHOPIFY <b></b></div><div>DATA & APIs <b></b></div><div>AI WORKFLOWS <b></b></div></div></div><div class="art-bottom">REACT · TYPESCRIPT · NODE.JS · LIQUID · AI</div></div>
+</section>
+<section id="work" class="section alt"><div class="container">
+<div class="section-top"><div><div class="kicker">01 / <span data-en="SELECTED WORK" data-fr="RÉALISATIONS">SELECTED WORK</span></div><h2 data-en="Work that ships.<br>Work that matters." data-fr="Des projets livrés.<br>Des résultats concrets.">Work that ships.<br>Work that matters.</h2></div><p data-en="Real e-commerce storefronts and production software, built to solve practical business problems." data-fr="Des boutiques réelles et du logiciel en production, conçus pour répondre à des besoins métier concrets.">Real e-commerce storefronts and production software, built to solve practical business problems.</p></div>
+<div class="featured"><div class="featured-content">
+<div class="kicker" style="color:#c4e0b0">01 — <span data-en="FEATURED APPLICATION" data-fr="APPLICATION À LA UNE">FEATURED APPLICATION</span></div>
+<h3 data-en="E-commerce Analytics & Profitability App" data-fr="Application Analytics & Rentabilité e-commerce">E-commerce Analytics & Profitability App</h3>
+<p data-en="Designed, developed and deployed a Shopify app in production, unifying Shopify sales and Meta Ads data for attribution, profitability and campaign decisions." data-fr="Conception, développement et déploiement d'une application Shopify en production réunissant ventes et données Meta Ads pour l'attribution, la rentabilité et les décisions campagnes.">Designed, developed and deployed a Shopify app in production, unifying Shopify sales and Meta Ads data for attribution, profitability and campaign decisions.</p>
+<div><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Shopify GraphQL</span><span class="tag">Meta API</span></div>
+<p data-en="UTM attribution · CPA / ROAS · gross and net profit · rule-based campaign recommendations · suspicious order flags" data-fr="Attribution UTM · CPA / ROAS · marge brute et nette · recommandations de campagnes par règles · signalement de commandes suspectes">UTM attribution · CPA / ROAS · gross and net profit · rule-based campaign recommendations · suspicious order flags</p>
+<p class="note" data-en="Private production tool. The panel is an illustration, not an actual screenshot." data-fr="Outil interne en production. Le visuel est une illustration et non une capture réelle.">Private production tool. The panel is an illustration, not an actual screenshot.</p>
+</div><div class="dashboard"><div class="panel"><div class="panelhead"><span>INSIGHTS / DASHBOARD</span><span>● CONCEPT</span></div><h3 style="font-size:25px;margin-top:26px" data-en="Campaign intelligence" data-fr="Analyse des campagnes">Campaign intelligence</h3><div class="metrics"><div class="metric"><span>CPA</span><i></i></div><div class="metric"><span>ROAS</span><i></i></div><div class="metric"><span>PROFIT</span><i></i></div></div><div class="bars"><span style="height:30%"></span><span style="height:50%"></span><span style="height:43%"></span><span style="height:68%"></span><span style="height:61%"></span><span style="height:82%"></span><span style="height:74%"></span><span style="height:91%"></span></div><div class="panelhead" style="margin-top:15px"><span>ATTRIBUTION</span><span>REPORTING</span><span>DECISIONS</span></div></div></div>
+</div>
+<h3 style="margin-top:55px" data-en="Shopify stores — from zero to launch" data-fr="Boutiques Shopify — de zéro au lancement">Shopify stores — from zero to launch</h3>
+<p style="color:var(--muted)" data-en="Three live e-commerce stores I built from scratch." data-fr="Trois boutiques e-commerce en ligne que j'ai créées de zéro.">Three live e-commerce stores I built from scratch.</p>
+<div class="grid">
+<article class="card"><div class="card-art vega"><small>NUTRITION / WELLNESS</small>VegaLife</div><div class="card-body"><div class="kicker">SHOPIFY / E-COMMERCE</div><h3>VegaLife Nutrition</h3><p data-en="Shopify storefront built from scratch, with custom conversion features and business integrations." data-fr="Boutique Shopify créée de zéro, avec fonctionnalités de conversion et intégrations métier.">Shopify storefront built from scratch, with custom conversion features and business integrations.</p><a target="_blank" rel="noopener noreferrer" href="https://vegalife-nutrition.net/" data-en="Visit live store ↗" data-fr="Voir le site ↗">Visit live store ↗</a></div></article>
+<article class="card"><div class="card-art bio"><small>HERBAL / WELLNESS</small>Bioherbs</div><div class="card-body"><div class="kicker">SHOPIFY / E-COMMERCE</div><h3>Bioherbs</h3><p data-en="End-to-end store creation, from initial build to a live shopping experience." data-fr="Création complète de la boutique, du démarrage à sa mise en ligne.">End-to-end store creation, from initial build to a live shopping experience.</p><a target="_blank" rel="noopener noreferrer" href="https://www.bioherbs.tn/" data-en="Visit live store ↗" data-fr="Voir le site ↗">Visit live store ↗</a></div></article>
+<article class="card"><div class="card-art perfume"><small>FRAGRANCE / COMMERCE</small>Perfume Dubai</div><div class="card-body"><div class="kicker">SHOPIFY / E-COMMERCE</div><h3>Perfume Dubai</h3><p data-en="Shopify store built from scratch, with a distinct brand and customer experience." data-fr="Boutique Shopify créée de zéro, avec une identité et une expérience client propres.">Shopify store built from scratch, with a distinct brand and customer experience.</p><a target="_blank" rel="noopener noreferrer" href="https://perfumedubai.com/" data-en="Visit live store ↗" data-fr="Voir le site ↗">Visit live store ↗</a></div></article>
+</div></div></section>
+<section id="skills" class="section"><div class="container"><div class="kicker">02 / <span data-en="EXPERTISE" data-fr="COMPÉTENCES">EXPERTISE</span></div><h2 data-en="Engineering meets business." data-fr="La technique au service du business.">Engineering meets business.</h2><div class="skills">
+<div class="skill"><div style="font-size:30px">⌘</div><h3 data-en="Full-stack engineering" data-fr="Développement full-stack">Full-stack engineering</h3><p data-en="Production applications, APIs, webhooks, backend integrations and data models." data-fr="Applications en production, APIs, webhooks, intégrations backend et modèles de données.">Production applications, APIs, webhooks, backend integrations and data models.</p><footer>React · TypeScript · Node.js · PostgreSQL</footer></div>
+<div class="skill"><div style="font-size:30px">◇</div><h3 data-en="Shopify & growth" data-fr="Shopify & croissance">Shopify & growth</h3><p data-en="Storefronts from scratch, Liquid customization, conversion improvements and performance analytics." data-fr="Boutiques créées de zéro, Liquid, optimisation des conversions et analyse de performance.">Storefronts from scratch, Liquid customization, conversion improvements and performance analytics.</p><footer>Liquid · Shopify GraphQL · CRO · GA4</footer></div>
+<div class="skill"><div style="font-size:30px">✳</div><h3 data-en="AI & automation" data-fr="IA & automatisation">AI & automation</h3><p data-en="LLM-powered reporting, AI-assisted product discovery, WhatsApp workflows and business automation." data-fr="Reporting avec LLM, découverte de produits assistée par IA, workflows WhatsApp et automatisation métier.">LLM-powered reporting, AI-assisted product discovery, WhatsApp workflows and business automation.</p><footer>OpenAI · Claude · Gemini · WhatsApp API</footer></div>
+</div></div></section>
+<section id="about" class="section alt"><div class="container about"><div><div class="kicker">03 / <span data-en="ABOUT ME" data-fr="À PROPOS">ABOUT ME</span></div><h2 data-en="A developer who understands the business side." data-fr="Un développeur qui comprend les enjeux métier.">A developer who understands the business side.</h2><p data-en="I'm a Tunisia-based engineer in computer science. I build products end-to-end and connect technical delivery to marketing measurement, conversion and operational improvements." data-fr="Je suis ingénieur en informatique basé en Tunisie. Je développe des produits de bout en bout en reliant technique, performance marketing, conversion et efficacité opérationnelle.">I'm a Tunisia-based engineer in computer science. I build products end-to-end and connect technical delivery to marketing measurement, conversion and operational improvements.</p><p data-en="I'm open to full-time and contract roles in Tunisia and to genuinely remote international collaboration." data-fr="Je suis ouvert aux postes salariés et aux missions en Tunisie comme aux collaborations internationales réellement à distance.">I'm open to full-time and contract roles in Tunisia and to genuinely remote international collaboration.</p><a href="mailto:omarbettaieb3@gmail.com?subject=Resume%20request" class="btn outline" data-en="Request my full CV ↗" data-fr="Demander mon CV complet ↗">Request my full CV ↗</a></div><div class="stats"><div class="kicker" style="color:#d1e9bb">THERAPIA / GROWTH</div><blockquote data-en="“I care about what happens after the code ships.”" data-fr="« Je m'intéresse à ce qui se passe après la mise en production. »">“I care about what happens after the code ships.”</blockquote><div class="numbers"><div><strong>+25%</strong><span data-en="WEB TRAFFIC" data-fr="TRAFIC WEB">WEB TRAFFIC</span></div><div><strong>+15%</strong><span data-en="ONLINE SALES" data-fr="VENTES EN LIGNE">ONLINE SALES</span></div></div><p style="color:#b8cdb5;font-size:12px" data-en="Results from my growth and technical role at Therapia." data-fr="Résultats de mon rôle Growth et Technique chez Therapia.">Results from my growth and technical role at Therapia.</p></div></div></section>
+<section class="contact" id="contact"><div class="container contact-flex"><div><div class="kicker" style="color:#bfd6b0">04 / <span data-en="GET IN TOUCH" data-fr="CONTACT">GET IN TOUCH</span></div><h2 data-en="Let's build what's next." data-fr="Construisons la suite.">Let's build what's next.</h2><p data-en="Open to relevant product, e-commerce and automation opportunities." data-fr="Ouvert aux opportunités en produits numériques, e-commerce et automatisation.">Open to relevant product, e-commerce and automation opportunities.</p></div><a class="email" href="mailto:omarbettaieb3@gmail.com">omarbettaieb3@gmail.com ↗</a></div></section>
+</main><footer class="container foot"><span>© <span id="year">2026</span> Omar Bettaieb.</span><span data-en="Built with intention · Hosted on GitHub Pages" data-fr="Conçu avec soin · Hébergé sur GitHub Pages">Built with intention · Hosted on GitHub Pages</span><a href="#top" data-en="Back to top ↑" data-fr="Retour en haut ↑">Back to top ↑</a></footer>
+<script>
+const buttons=[...document.querySelectorAll('[data-lang]')];
+const translatable=[...document.querySelectorAll('[data-en]')];
+function setLang(lang){
+document.documentElement.lang=lang;
+translatable.forEach(el=>{el.innerHTML=el.getAttribute('data-'+lang)});
+buttons.forEach(b=>{const a=b.dataset.lang===lang;b.classList.toggle('active',a);b.setAttribute('aria-pressed',String(a))});
+try{localStorage.setItem('ob-site-language',lang)}catch(e){}
+}
+buttons.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+let initial='en';try{initial=localStorage.getItem('ob-site-language')||'en'}catch(e){}
+setLang(initial==='fr'?'fr':'en');document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
