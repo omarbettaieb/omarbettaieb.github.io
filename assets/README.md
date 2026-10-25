@@ -30,3 +30,12 @@ Upload these original-screenshot-derived JPEGs to this folder to activate the im
 - `vegaprofit_case_study_03.jpg`
 
 All images are from the public interactive demo and use **generated, fictional data**. Upload these three assets into `/assets/`; `/vegaprofit.html` will show them automatically. No real revenue or ad performance should be inferred from demo figures.
+
+## WhatsApp & AI Commerce Automation
+
+These two redacted JPG screenshots come from actual developer test conversations. They must be uploaded to this `assets/` folder:
+
+- `whatsapp_ai_french_test.jpg` — English and French AI test conversation; phone header removed.
+- `whatsapp_ai_multilingual_test.jpg` — English and Arabic AI test conversation; phone header and generic Meta Hello World sample removed.
+
+The `/whatsapp-ai-automation.html` page shows the images after upload. They are **test conversations**, not real customers, clinical recommendations, or evidence of automated order confirmation/abandoned-checkout results.
