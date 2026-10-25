@@ -53,4 +53,5 @@
 const buttons=[...document.querySelectorAll('[data-lang]')],nodes=[...document.querySelectorAll('[data-en]')];
 function setLang(lang){document.documentElement.lang=lang;nodes.forEach(el=>el.textContent=el.getAttribute('data-'+lang));buttons.forEach(b=>{let active=b.dataset.lang===lang;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});try{localStorage.setItem('ob-site-language',lang)}catch(e){}}
 buttons.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));let initial='en';try{initial=localStorage.getItem('ob-site-language')||'en'}catch(e){}setLang(initial==='fr'?'fr':'en');
-</script></body></html>
+</script><script defer src="/assets/portfolio-analytics.js"></script>
+</body></html>
