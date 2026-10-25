@@ -22,3 +22,11 @@ Only use actual screenshots from the live stores. Do not invent products, number
 - `perfume_dubai_case_study_02.jpg`
 
 Upload these original-screenshot-derived JPEGs to this folder to activate the imagery on `/perfume-dubai.html`.
+
+## VegaProfit
+
+- `vegaprofit_case_study_01.jpg`
+- `vegaprofit_case_study_02.jpg`
+- `vegaprofit_case_study_03.jpg`
+
+All images are from the public interactive demo and use **generated, fictional data**. Upload these three assets into `/assets/`; `/vegaprofit.html` will show them automatically. No real revenue or ad performance should be inferred from demo figures.
