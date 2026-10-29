@@ -152,7 +152,7 @@
       reportEvent('portfolio_cv_click', {cv_language: path.includes('_fr.pdf') ? 'fr' : 'en'});
     } else if (/\/(resume-engineering|resume-growth)\.html$/.test(path)) {
       reportEvent('portfolio_resume_open', {profile: path.includes('engineering') ? 'engineering' : 'growth'});
-    } else if (/\/(vegaprofit|vegalife-growth|vegalife|bioherbs|perfume-dubai|whatsapp-ai-automation)\.html$/.test(path)) {
+    } else if (/\/(viranda|vegaprofit|vegalife-growth|vegalife|bioherbs|perfume-dubai|whatsapp-ai-automation)\.html$/.test(path)) {
       reportEvent('portfolio_case_study_open', {case_study: path.split('/').pop().replace('.html', '')});
     }
   }
