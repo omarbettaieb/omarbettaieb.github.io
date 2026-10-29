@@ -11,7 +11,10 @@
 <meta property="og:title" content="Viranda — Headless E-commerce &amp; Custom Product Configurator">
 <meta property="og:description" content="A non-Shopify full-stack commerce project with Next.js, Medusa.js, PostgreSQL and interactive plant/pot configuration logic.">
 <meta property="og:url" content="https://omarbettaieb.github.io/viranda.html">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://omarbettaieb.github.io/assets/viranda_configurator_screenshot.webp">
+<meta property="og:image:alt" content="Actual Viranda plant and pot configurator mobile screenshot">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://omarbettaieb.github.io/assets/viranda_configurator_screenshot.webp">
 <style>
 :root{--ink:#193c2d;--muted:#5c7565;--deep:#173828;--cream:#f8f9f2;--line:#d5e1d2;--soft:#eaf1e6;--lime:#def3a7;--gold:#c39b62}
 *{box-sizing:border-box}
@@ -81,6 +84,20 @@ footer a{text-decoration:underline;text-underline-offset:4px;font-weight:750}
 @media(max-width:850px){.hero,.section-head{grid-template-columns:1fr}.hero{gap:27px;padding-top:49px}.section-head{gap:10px}.features{grid-template-columns:repeat(2,minmax(0,1fr))}.workflow{grid-template-columns:repeat(2,minmax(0,1fr))}.outro .container{align-items:flex-start;flex-direction:column}}
 @media(max-width:550px){.container{padding:0 19px}nav{min-height:71px}.nav-right{gap:5px}.nav-right>a{font-size:11px}.hero{padding:43px 0 55px}h1{font-size:clamp(40px,11vw,57px)}.lead{font-size:16px}.feature-demo{padding:13px}.demo-main{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:7px}.demo-visual{min-height:240px}.demo-param{padding:9px 7px}.demo-param strong{font-size:11px}.demo-param small{font-size:9px}.evidence,.features,.workflow,.diagram{grid-template-columns:1fr}.section{padding:56px 0}footer{display:block}footer a{display:block;margin:8px 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Authentic project screenshots — replace the conceptual SVG */
+.viranda-hero-gallery{background:#173828;padding:19px;border-radius:22px;box-shadow:0 23px 42px #162b2525;min-width:0}
+.viranda-gallery-top{display:flex;gap:12px;align-items:center;justify-content:space-between;color:#c3ddb3;font-size:10px;font-weight:850;letter-spacing:.12em;margin-bottom:16px}
+.viranda-gallery-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:13px;align-items:stretch}
+.viranda-shot{margin:0;min-width:0;display:flex;flex-direction:column;border-radius:13px;overflow:hidden;background:#e9eee2}
+.viranda-shot img{display:block;width:100%;height:100%;max-height:436px;min-height:0;object-fit:contain;object-position:top center;background:#ede8db;flex:1}
+.viranda-shot.featured img{object-fit:cover;object-position:center top}
+.viranda-shot.secondary img{object-fit:contain;object-position:top center}
+.viranda-shot figcaption{padding:13px 12px 15px;background:#f8f9f2;color:#193c2d;display:grid;gap:4px}
+.viranda-shot figcaption strong{font-size:12px;line-height:1.3}.viranda-shot figcaption span{font-size:10px;line-height:1.5;color:#637c6b}
+.viranda-screenshot-note{font-size:11px;color:#cbdcca;line-height:1.55;margin:13px 0 0}
+@media(max-width:550px){.viranda-hero-gallery{padding:12px}.viranda-gallery-grid{gap:8px}.viranda-shot img{max-height:300px}.viranda-shot figcaption{padding:10px 8px}.viranda-shot figcaption strong{font-size:11px}.viranda-shot figcaption span{font-size:9px}}
+@media(max-width:370px){.viranda-gallery-grid{grid-template-columns:1fr 1fr}.viranda-shot img{max-height:250px}}
 </style>
 </head>
 <body>
@@ -93,37 +110,16 @@ footer a{text-decoration:underline;text-underline-offset:4px;font-weight:750}
 <div class="hero-cta"><a class="btn light" href="https://viranda.tn/" target="_blank" rel="noopener noreferrer" data-en="Visit Viranda ↗" data-fr="Visiter Viranda ↗">Visit Viranda ↗</a><a class="btn outline" href="#configurator" data-en="Explore the configurator ↓" data-fr="Découvrir le configurateur ↓">Explore the configurator ↓</a></div>
 <div class="stack"><span>Next.js</span><span>React.js</span><span>TypeScript</span><span>Medusa.js</span><span>Node.js</span><span>PostgreSQL</span><span>Tailwind CSS</span></div>
 </div>
-<div class="feature-demo" role="group" aria-label="Concept illustration of the plant-pot configurator"><div class="demo-top"><span data-en="VIRANDA / CONFIGURATOR CONCEPT" data-fr="VIRANDA / CONCEPT DU CONFIGURATEUR">VIRANDA / CONFIGURATOR CONCEPT</span><span aria-hidden="true">✳</span></div><div class="demo-main">
-<div class="demo-visual">
-<svg viewBox="0 0 310 360" role="img" aria-label="Stylized illustration of a plant in a terracotta pot, not a product screenshot" xmlns="http://www.w3.org/2000/svg">
-<title>Plant and pot configuration concept</title>
-<ellipse cx="155" cy="317" rx="113" ry="17" fill="#617f66" opacity=".22"/>
-<path d="M157 266 C150 221 139 157 144 88" stroke="#4a7754" stroke-width="8" fill="none" stroke-linecap="round"/>
-<path d="M158 250 C177 214 206 175 220 145" stroke="#4a7754" stroke-width="6" fill="none" stroke-linecap="round"/>
-<path d="M147 227 C125 190 94 159 73 145" stroke="#4a7754" stroke-width="6" fill="none" stroke-linecap="round"/>
-<path d="M145 160 C117 151 101 125 113 104 C141 115 156 137 145 160" fill="#41744b"/>
-<path d="M147 130 C128 100 139 68 160 51 C182 82 173 112 147 130" fill="#528b5a"/>
-<path d="M165 203 C180 174 207 160 230 168 C223 196 198 213 165 203" fill="#638e5a"/>
-<path d="M133 192 C103 194 79 174 76 152 C107 149 131 162 133 192" fill="#508452"/>
-<path d="M180 189 C190 148 218 114 251 114 C250 156 227 183 180 189" fill="#346e45"/>
-<path d="M115 151 C78 147 53 124 56 97 C91 99 116 119 115 151" fill="#76a16a"/>
-<path d="M171 129 C186 94 220 80 245 95 C229 126 209 140 171 129" fill="#79aa70"/>
-<path d="M151 103 C132 72 103 60 80 72 C95 104 119 119 151 103" fill="#66975d"/>
-<path d="M83 240 L227 240 L204 313 Q155 329 106 313 Z" fill="#bd7c51"/>
-<ellipse cx="155" cy="241" rx="74" ry="14" fill="#d29b73"/>
-<ellipse cx="155" cy="240" rx="62" ry="10" fill="#665342"/>
-<path d="M84 244 L226 244" stroke="#e2b28b" stroke-width="7" stroke-linecap="round"/>
-<path d="M107 310 Q155 322 203 310" stroke="#986345" stroke-width="4" fill="none"/>
-<ellipse cx="164" cy="157" rx="95" ry="126" fill="none" stroke="#f9ffcf" stroke-width="2" stroke-dasharray="6 8" opacity=".35"/>
-<path d="M244 88 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5 Z" fill="#fffbd6" opacity=".85"/>
-</svg>
+<div class="viranda-hero-gallery" role="group" aria-label="Real mobile screenshots of the Viranda shop and configurator">
+<div class="viranda-gallery-top"><span data-en="REAL VIRANDA INTERFACES" data-fr="VÉRITABLES INTERFACES VIRANDA">REAL VIRANDA INTERFACES</span><span>VIRANDA.TN</span></div>
+<div class="viranda-gallery-grid">
+<figure class="viranda-shot featured"><img src="/assets/viranda_configurator_screenshot.webp" alt="Actual Viranda mobile plant and pot configurator with a Monstera, black pot, navigation arrows and Atelier, Matin, Soir lighting options" width="320" height="538" loading="eager" decoding="async">
+<figcaption><strong data-en="Plant / pot configurator" data-fr="Configurateur plante / pot">Plant / pot configurator</strong><span data-en="Compatibility · Visual preview · Lighting" data-fr="Compatibilité · Aperçu visuel · Éclairage">Compatibility · Visual preview · Lighting</span></figcaption></figure>
+<figure class="viranda-shot secondary"><img src="/assets/viranda_homepage_screenshot.webp" alt="Actual mobile Viranda homepage with green-and-gold branding, plant imagery and French headline Pas seulement une plante. Une présence." width="320" height="320" loading="lazy" decoding="async">
+<figcaption><strong data-en="Storefront & brand" data-fr="Boutique & identité visuelle">Storefront & brand</strong><span data-en="Next.js / React commerce" data-fr="Commerce Next.js / React">Next.js / React commerce</span></figcaption></figure>
 </div>
-<div class="demo-params">
-<div class="demo-param"><small data-en="01 / SELECT" data-fr="01 / CHOIX">01 / SELECT</small><strong data-en="Plant" data-fr="Plante">Plant</strong></div>
-<div class="demo-param"><small data-en="02 / PAIR" data-fr="02 / ASSOCIER">02 / PAIR</small><strong data-en="Pot" data-fr="Pot">Pot</strong></div>
-<div class="demo-param ok"><small data-en="03 / CHECK" data-fr="03 / VÉRIFIER">03 / CHECK</small><strong data-en="Compatibility rules" data-fr="Règles de compatibilité">Compatibility rules</strong></div>
-<div class="demo-param"><small data-en="04 / PREVIEW" data-fr="04 / APERÇU">04 / PREVIEW</small><strong data-en="2D / 3D + Light" data-fr="2D / 3D + lumière">2D / 3D + Light</strong></div>
-</div></div><div class="demo-foot"><span data-en="Concept illustration, not a screenshot or working demo" data-fr="Illustration conceptuelle, ni capture d’écran ni démo interactive">Concept illustration, not a screenshot or working demo</span><b>PLANT × POT</b></div></div>
+<p class="viranda-screenshot-note" data-en="Actual mobile screenshots supplied by the project owner; Android browser chrome removed and images optimized for web. Not a live interactive demo." data-fr="Véritables captures mobiles fournies par le porteur du projet ; interface Android retirée et images optimisées pour le Web. Il ne s’agit pas d’une démo interactive.">Actual mobile screenshots supplied by the project owner; Android browser chrome removed and images optimized for web. Not a live interactive demo.</p>
+</div>
 </section>
 <section class="section alt"><div class="container"><div class="section-head"><div><div class="kicker">01 / <span data-en="THE PRODUCT" data-fr="LE PRODUIT">THE PRODUCT</span></div><h2 data-en="More than a standard product catalogue." data-fr="Au-delà d’un catalogue classique.">More than a standard product catalogue.</h2></div><p data-en="Viranda brings together a modern commerce stack and a tailored configuration experience for matching plants with pots. It demonstrates full-stack development outside Shopify's theme and app ecosystem." data-fr="Viranda associe une stack e-commerce moderne à une expérience de configuration dédiée à l’association plantes/pots. Le projet illustre le développement full-stack hors de l’écosystème des thèmes et applications Shopify.">Viranda brings together a modern commerce stack and a tailored configuration experience for matching plants with pots. It demonstrates full-stack development outside Shopify's theme and app ecosystem.</p></div>
 <div class="evidence"><div><strong data-en="Non-Shopify stack" data-fr="Stack hors Shopify">Non-Shopify stack</strong><p>Next.js · React · Medusa.js · Node.js · PostgreSQL</p></div><div><strong data-en="Compatibility logic" data-fr="Logique de compatibilité">Compatibility logic</strong><p data-en="Plant/pot pairing rules in a custom React and JavaScript configurator." data-fr="Règles d’association plante/pot dans un configurateur personnalisé React et JavaScript.">Plant/pot pairing rules in a custom React and JavaScript configurator.</p></div><div><strong data-en="Visual experience" data-fr="Expérience visuelle">Visual experience</strong><p data-en="2D/3D representation complemented by lighting effects." data-fr="Représentations 2D/3D enrichies d’effets d’éclairage.">2D/3D representation complemented by lighting effects.</p></div></div>
@@ -151,7 +147,7 @@ footer a{text-decoration:underline;text-underline-offset:4px;font-weight:750}
 <article class="feature"><div class="n">02 / 2D + 3D</div><h3 data-en="Product visualization" data-fr="Visualisation produit">Product visualization</h3><p data-en="Visual representations give customers another way to understand a configured composition." data-fr="Les représentations visuelles aident les clients à comprendre la composition configurée.">Visual representations give customers another way to understand a configured composition.</p></article>
 <article class="feature"><div class="n">03 / LIGHTING</div><h3 data-en="Lighting effects" data-fr="Effets d’éclairage">Lighting effects</h3><p data-en="Lighting effects are included within the configurable visual experience." data-fr="Des effets d’éclairage complètent l’expérience visuelle du configurateur.">Lighting effects are included within the configurable visual experience.</p></article>
 </div>
-<p class="disclaimer" data-en="No sales, conversion uplift, loading-speed or optimization metrics are claimed for Viranda here. The plant/pot diagram is original explanatory artwork, not a live-site screenshot. A code repository or actual screen captures can be added later if shared." data-fr="Aucun chiffre de ventes, de conversion ou de vitesse n’est attribué à Viranda ici. Le visuel plante/pot est une illustration explicative originale, pas une capture du site réel. Un dépôt de code ou de vraies captures peuvent être ajoutés ultérieurement s’ils sont fournis.">No sales, conversion uplift, loading-speed or optimization metrics are claimed for Viranda here. The plant/pot diagram is original explanatory artwork, not a live-site screenshot. A code repository or actual screen captures can be added later if shared.</p>
+<p class="disclaimer" data-en="No sales, conversion uplift, loading-speed or optimization metrics are claimed for Viranda here. The two images are genuine project screenshots from a mobile browser, cropped to remove the browser interface." data-fr="Aucun chiffre de ventes, de conversion ou de vitesse n’est attribué à Viranda ici. Les deux images sont de véritables captures du projet sur mobile, recadrées pour retirer l’interface du navigateur.">No sales, conversion uplift, loading-speed or optimization metrics are claimed for Viranda here. The two images are genuine project screenshots from a mobile browser, cropped to remove the browser interface.</p>
 </div></section>
 <section class="outro"><div class="container"><div><div class="kicker" style="color:#d9edb5">04 / <span data-en="LIVE PROJECT" data-fr="PROJET EN LIGNE">LIVE PROJECT</span></div><h2 data-en="Explore Viranda beyond this case study." data-fr="Découvrez Viranda au-delà de cette étude de cas.">Explore Viranda beyond this case study.</h2><p data-en="See the project website, or explore the rest of my full-stack and commerce work." data-fr="Consultez le site du projet ou explorez mes autres réalisations full-stack et e-commerce.">See the project website, or explore the rest of my full-stack and commerce work.</p></div><a class="btn light" href="https://viranda.tn/" target="_blank" rel="noopener noreferrer" data-en="Visit viranda.tn ↗" data-fr="Visiter viranda.tn ↗">Visit viranda.tn ↗</a></div></section>
 </main>
