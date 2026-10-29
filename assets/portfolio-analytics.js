@@ -172,7 +172,9 @@
   `;
   function initialize() {
     document.head.appendChild(style);
-    const footer = document.querySelector('footer');
+    // Select only the page-level footer, never skill-card <footer> elements.
+    // VegaLife uses a direct-child <div class="footer"> instead of <footer>.
+    const footer = document.querySelector('body > footer, body > .footer');
     if (footer) {
       footerButton = document.createElement('button');
       footerButton.type = 'button';
